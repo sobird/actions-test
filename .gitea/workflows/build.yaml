@@ -23,3 +23,15 @@ jobs:
     # container: catthehacker/ubuntu:act-latest
     steps:
       - run: docker version
+
+  Test-Node:
+    runs-on: ubuntu-latest
+    steps:
+      # 安装node环境
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org/
+
+      - run: node -v
