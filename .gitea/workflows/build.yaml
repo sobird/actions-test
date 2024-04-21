@@ -35,7 +35,10 @@ jobs:
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
-      - run: node -v
+          cache: 'yarn'
+      - run: |
+          node -v
+          yarn -v
 
       - name: Restore Yarn Cache
         id: yarn-cache
