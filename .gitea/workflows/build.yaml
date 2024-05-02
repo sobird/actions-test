@@ -3,6 +3,7 @@ run-name: ${{ github.actor }} is testing out Gitea Actions
 on: [push]
 jobs:
   Explore-Gitea-Actions:
+    needs: Test-Node
     runs-on: ubuntu-latest
     steps:
       - run: echo "  The job was automatically triggered by a ${{ github.event_name }} event."
@@ -26,7 +27,6 @@ jobs:
       - run: docker version
 
   Test-Node:
-    needs: Explore-Gitea-Actions
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
