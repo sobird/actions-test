@@ -27,7 +27,7 @@ jobs:
       - run: docker version
 
   Test-Node:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         os: [ubuntu-latest, ubuntu-20.04]
