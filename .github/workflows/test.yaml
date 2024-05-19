@@ -17,8 +17,10 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "This job's status is ${{ job.status }}."
   Test-Empty:
-    needs: [Test-Empty]
     runs-on: ubuntu-latest
+    strategy:
+      matrix: 
+        os: [ubuntu-latest]
     # 此容器可使用docker，可查看 https://github.com/catthehacker/docker_images
     # container: catthehacker/ubuntu:act-latest
     steps:
