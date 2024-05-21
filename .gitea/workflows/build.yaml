@@ -64,4 +64,9 @@ jobs:
     # 此容器可使用docker，可查看 https://github.com/catthehacker/docker_images
     container: alpine
     steps:
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org/
       - run: docker version
