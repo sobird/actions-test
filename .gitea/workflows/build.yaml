@@ -60,9 +60,8 @@ jobs:
         run: |
           npm i
   Test-Empty:
-    needs: [Test-Other]
     runs-on: ubuntu-latest
     # 此容器可使用docker，可查看 https://github.com/catthehacker/docker_images
-    # container: catthehacker/ubuntu:act-latest
+    container: alpine
     steps:
       - run: docker version
