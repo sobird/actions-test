@@ -1,13 +1,22 @@
-name: Gitea Actions Test
-run-name: ${{ github.actor }} is testing out Gitea Actions  
-on: [push]
+name: reusable-workflow
+run-name: ${{ github.actor }} is testing out Actions  
+on: 
+  workflow_call:
+
+permissions:
+  contents: read
+
 jobs:
-  Reusable-Workflow:
-    runs-on: ubuntu-latest
-    uses: ./.gitea/workflows/reusable-workflow.yaml
+  reusable-workflow:
+    runs-on: ${{ matrix.platform }}
+    strategy:
+      matrix:
+        os: ['ubuntu-latest']
+        node: [18, 20]
+      fail-fast: false
     steps:
-      - run: echo "The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "This job is now running on a ${{ runner.os }} server hosted by Gitea!"
+      - run: echo "The job was automatically triggered by a ${{ github.event_name }} ddd dsdsd dd event."
+      - run: echo "This job is now running on a ${{ runner.os }} server hosted by !"
       - run: echo "The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - name: Check out repository code
         uses: actions/checkout@v3
