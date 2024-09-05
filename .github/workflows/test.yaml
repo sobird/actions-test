@@ -1,8 +1,8 @@
-name: Gitea Actions Test
-run-name: ${{ github.actor }} is testing out Gitea Actions  
+name: Workflow Test
+run-name: ${{ github.actor }} is testing out Actions  
 on: [push]
 jobs:
-  Explore-Gitea-Actions:
+  Explore-Actions:
     runs-on: ubuntu-latest
     steps:
       - run: echo "The job was automatically triggered by a ${{ github.event_name }} event."
@@ -26,12 +26,11 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "This job's status is ${{ job.status }}."
+      - run: echo "Runner name is ${{ runner.name }}."
   Test-Empty:
     runs-on: ubuntu-latest
     strategy:
       matrix: 
         os: [ubuntu-latest]
-    # 此容器可使用docker，可查看 https://github.com/catthehacker/docker_images
-    # container: catthehacker/ubuntu:act-latest
     steps:
       - run: docker version
