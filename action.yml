@@ -1,0 +1,16 @@
+name: 'Hello World Javascript Action'
+description: 'Greet someone and record the time'
+inputs:
+  who-to-greet:  # id of input
+    description: 'Who to greet'
+    required: true
+    default: 'World'
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'node20'
+  post-if: runner.os == 'Linux'
+  pre: 'dist/index.js'
+  main: 'dist/index.js'
+  post: 'dist/index.js'

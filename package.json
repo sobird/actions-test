@@ -5,13 +5,20 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "ncc -m build index.ts --license licenses.txt",
     "version": "git add -A .",
     "postversion": "git push && git push --tags"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.2",
+    "typescript": "^5.6.3"
   }
 }
