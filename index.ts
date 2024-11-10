@@ -14,7 +14,7 @@ try {
   const testState = core.getState('test-state');
   console.log('test-state:', testState)
 
-  core.saveState('test-state', 'test state');
+  core.saveState('test-state', +new Date);
 } catch (error) {
   core.setFailed((error as Error).message);
 }
