@@ -15,6 +15,10 @@ runs:
     - name: Composite Checkout
       uses: actions/checkout@v4
 
+    - name: Test Actions
+      # if: runner.os == 'linux1'
+      uses: sobird/actions-test@1cb40cff047a5892397986ed61dfbcfc4020fe74
+
     - name: Set Greeting
       run: echo "Hello $INPUT_WHO_TO_GREET."
       shell: bash
