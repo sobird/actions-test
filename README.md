@@ -1,3 +1,3 @@
-# actions-test
+# Composite Action
 
 test actions
