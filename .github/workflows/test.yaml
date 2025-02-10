@@ -38,3 +38,5 @@ jobs:
         os: [ubuntu-latest]
     steps:
       - run: docker version
+      - name: Install Dependencies 🔧
+        run: pnpm install --no-frozen-lockfile
