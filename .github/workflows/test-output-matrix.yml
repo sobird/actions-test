@@ -34,6 +34,6 @@ jobs:
       - name: Print job outputs
         run: echo '${{ toJSON(needs.job1.outputs) }}'
 
-      - name: Print job outputs
+      - name: Print strategy
         run: |
           echo "strategy=${{toJSON(strategy)}}"
