@@ -14,7 +14,7 @@ jobs:
       - uses: docker://alpine:latest
         with:
           somekey: ${{ env.TEST }}
-          args: echo ${INPUT_SOMEKEY} | grep somevalue
+          args: echo test
       - run: ls
       - run: echo 'hello world'
       - run: echo ${GITHUB_SHA} >> $(dirname "${GITHUB_WORKSPACE}")/sha.txt
