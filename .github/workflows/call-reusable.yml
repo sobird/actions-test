@@ -11,8 +11,8 @@ jobs:
     uses: ./.github/workflows/reusable.yml
     with:
       username: 'actions test'
-    # secrets:
-    #   access-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+    secrets:
+      access-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
   job2:
     runs-on: ubuntu-latest
