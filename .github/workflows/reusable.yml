@@ -2,6 +2,12 @@ name: Reusable workflow
 
 on:
   workflow_call:
+    inputs:
+      username:
+        description: 'A username passed from the caller workflow'
+        default: 'john-doe'
+        required: false
+        type: string
     # Map the workflow outputs to job outputs
     outputs:
       firstword:
@@ -9,11 +15,10 @@ on:
         value: ${{ jobs.example_job.outputs.output1 }}
       secondword:
         description: "The second output string"
-        value: ${{ jobs.example_job2.outputs.output2 }}
+        value: ${{ jobs.example_job.outputs.output2 }}
 
 jobs:
   example_job:
-    if: ${{ 1 == 2}}
     name: Generate output
     runs-on: ubuntu-latest
     # Map the job outputs to step outputs
@@ -32,3 +37,10 @@ jobs:
     steps:
       - id: step1
         run: echo "firstword=hello" >> $GITHUB_OUTPUT
+
+  print-username:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print the input name to STDOUT
+        run: echo The username is ${{ inputs.username }}

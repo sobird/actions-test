@@ -1,4 +1,4 @@
-name: test context jobs
+name: Call Reusable
 
 on:
   workflow_dispatch:
@@ -9,6 +9,8 @@ permissions:
 jobs:
   job1:
     uses: ./.github/workflows/reusable.yml
+    with:
+      username: 'actions test'
 
   job2:
     runs-on: ubuntu-latest
