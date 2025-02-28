@@ -7,7 +7,7 @@ inputs:
     required: true
   other:
     description: "other input"
-    default: "${{ inputs.some }}"
+    default: "inputs.some"
     required: false
 outputs:
   output:
