@@ -20,7 +20,7 @@ jobs:
     # Remote composite test
     - name: use remote composite action
       id: remote-composite
-      uses: sobird/actions-test/.github/actions/composite/with-inputs-2@master
+      uses: sobird/actions-test/.github/actions/composite/with-inputs-1@master
       with:
         some: ${{ steps.set-output.outputs.var }}
     - name: test remote composite output
