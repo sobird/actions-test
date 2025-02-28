@@ -31,3 +31,8 @@ jobs:
     steps:
       - name: Print the input tag to STDOUT
         run: echo  The tags are ${{ inputs.tags }} 
+
+      - name: use simple composite action
+        uses: ./.github/actions/composite/with-inputs
+        with:
+          some: ${{ inputs.tags }} 
