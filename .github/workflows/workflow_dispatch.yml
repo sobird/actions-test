@@ -38,3 +38,6 @@ jobs:
         uses: ./.github/actions/composite/with-inputs
         with:
           some: ${{ inputs.tags }} 
+
+      - name: print inputs
+        run: echo "${{toJSON(inputs)}}"
