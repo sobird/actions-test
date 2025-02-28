@@ -7,7 +7,7 @@ inputs:
     required: true
   other:
     description: "other input"
-    default: "inputs.some"
+    default: value
     required: false
 outputs:
   output:
