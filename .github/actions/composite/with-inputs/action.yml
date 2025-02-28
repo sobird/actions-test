@@ -21,7 +21,6 @@ runs:
       run: |
         echo "github=${{toJSON(github)}}"
         echo "env=${{toJSON(env)}}"
-        echo "vars=${{toJSON(vars)}}"
         echo "job=${{toJSON(job)}}"
         echo "jobs=${{toJSON(jobs)}}"
         echo "steps=${{toJSON(steps)}}"
