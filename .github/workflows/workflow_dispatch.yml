@@ -1,5 +1,4 @@
 on:
-  push:
   workflow_dispatch:
     inputs:
       logLevel:
@@ -39,5 +38,17 @@ jobs:
         with:
           some: ${{ inputs.tags }} 
 
-      - name: print inputs
-        run: echo "${{toJSON(inputs)}}"
+      - name: Print Inputs
+        run: |
+          echo "github=${{toJSON(github)}}"
+          echo "env=${{toJSON(env)}}"
+          echo "vars=${{toJSON(vars)}}"
+          echo "job=${{toJSON(job)}}"
+          echo "jobs=${{toJSON(jobs)}}"
+          echo "steps=${{toJSON(steps)}}"
+          echo "runner=${{toJSON(runner)}}"
+          echo "secrets=${{toJSON(secrets)}}"
+          echo "strategy=${{toJSON(strategy)}}"
+          echo "matrix=${{toJSON(matrix)}}"
+          echo "needs=${{toJSON(needs)}}"
+          echo "inputs=${{toJSON(inputs)}}"
