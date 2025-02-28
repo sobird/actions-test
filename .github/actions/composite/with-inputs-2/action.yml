@@ -15,7 +15,9 @@ runs:
         [[ "${{ inputs.composite-input == 'value' }}" = "true" ]] || exit 1
       shell: bash
 
-    - uses: sobird/actions/test/actions/composite/with-inputs-1@master
+    - uses: ./.github/actions/composite/with-inputs-1
+      with:
+        some: value
     - name: test input value again
       run: |
         echo "${{toJSON(inputs)}}"
