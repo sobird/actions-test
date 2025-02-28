@@ -27,3 +27,11 @@ jobs:
       run: |
         echo "steps.remote-composite.outputs.output=${{ steps.remote-composite.outputs.output }}"
         [[ "${{ steps.remote-composite.outputs.output == 'value' }}" = "true" ]] || exit 1
+    
+    - name: use simple docker action
+      uses: ./.github/actions/docker
+      with:
+        who-to-greet: docker action
+    
+    - name: print inputs
+      run: echo "${{toJSON(inputs)}}"
