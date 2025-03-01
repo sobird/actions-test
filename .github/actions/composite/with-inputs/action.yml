@@ -17,6 +17,8 @@ outputs:
 runs:
   using: "composite"
   steps:
+    - run: env
+      shell: bash
     - name: Print composite context
       run: |
         echo "github=${{toJSON(github)}}"

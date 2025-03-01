@@ -38,6 +38,8 @@ jobs:
         with:
           some: ${{ inputs.tags }} 
 
+      - run: env
+      
       - name: Print Inputs
         run: |
           echo "github=${{toJSON(github)}}"
