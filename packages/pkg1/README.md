@@ -16,3 +16,5 @@ feat: feat something
 feat: update pkg1
 
 feat: remove config.json
+
+fix: test release-type config
