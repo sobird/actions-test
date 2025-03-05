@@ -10,7 +10,8 @@
     },
     "packages/pkg1": {
       "release-type": "node",
-      "separate-pull-requests": true
+      "separate-pull-requests": true,
+      "component": "test"
     }
   }
 }
