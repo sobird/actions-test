@@ -1,6 +1,7 @@
 name: Workflow Test
 run-name: ${{ github.actor }} is testing out Actions  
-on: [push]
+on:
+  workflow_dispatch:
 jobs:
   Explore-Actions:
     runs-on: windows-latest
