@@ -5,6 +5,9 @@
   "tag-separator": "@",
   "plugins": ["node-workspace"],
   "packages": {
+    ".": {
+      "release-type": "node"
+    },
     "packages/pkg1": {
       "release-type": "node"
     }
