@@ -1,5 +1,5 @@
 {
-  "name": "pkg1",
+  "name": "test",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
