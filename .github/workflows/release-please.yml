@@ -29,10 +29,11 @@ jobs:
           token: ${{ secrets.MY_RELEASE_PLEASE_TOKEN }}
           # this is a built-in strategy in release-please, see "Action Inputs"
           # for more options
+          release-type: node
           # config-file: release-please-config.json
           # manifest-file: .release-please-manifest.json
           # create a release from a path other than the repository's root
-          path: .
+          # path: pkg/cmd
           # The short ref name of the branch or tag that triggered
           # the workflow run. For example, `main` or `1.x`
           # target-branch: ${{ github.ref_name }}
