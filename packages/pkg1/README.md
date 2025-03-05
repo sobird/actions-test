@@ -1,3 +1,4 @@
 @packages/pkg1
 
-test
+separate-pull-requests:
+Open a separate release pull request for each component. Defaults to `false`.

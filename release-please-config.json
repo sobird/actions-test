@@ -9,7 +9,8 @@
       "release-type": "node"
     },
     "packages/pkg1": {
-      "release-type": "node"
+      "release-type": "node",
+      "separate-pull-requests": true
     }
   }
 }
