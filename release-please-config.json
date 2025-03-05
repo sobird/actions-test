@@ -2,10 +2,12 @@
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
   "release-type": "node",
   "include-component-in-tag": true,
+  "tag-separator": "@",
   "plugins": ["node-workspace"],
   "packages": {
-    "packages/aaa": {
-      "component": "my-aaa"
+    "./packages/pkg1": {
+      "package-name": "pkg1",
+      "release-type": "node"
     }
   }
 }
