@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/sobird/actions-test/compare/pkg2@v1.1.0...pkg2@v1.2.0) (2025-03-05)
+
+
+### Features
+
+* test remove version-file ([8ed8693](https://github.com/sobird/actions-test/commit/8ed86931304233eaee3b1e0e1c4fb20dd2b8cfe1))
+
 ## [1.1.0](https://github.com/sobird/actions-test/compare/pkg2@v1.0.0...pkg2@v1.1.0) (2025-03-05)
 
 
