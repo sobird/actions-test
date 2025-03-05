@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/sobird/actions-test/compare/pkg2@v1.2.0...pkg2@v1.2.1) (2025-03-05)
+
+
+### Bug Fixes
+
+* fix something ([7e9f72f](https://github.com/sobird/actions-test/commit/7e9f72f5366983c1380171b88df1caa16adf151d))
+
 ## [1.2.0](https://github.com/sobird/actions-test/compare/pkg2@v1.1.0...pkg2@v1.2.0) (2025-03-05)
 
 
