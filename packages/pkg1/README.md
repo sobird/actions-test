@@ -8,3 +8,5 @@ remove plugin
 add pkg2
 
 feat: test package.json version
+
+feat: update pr content
