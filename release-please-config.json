@@ -3,11 +3,9 @@
   "release-type": "node",
   "include-component-in-tag": true,
   "tag-separator": "@",
-  "plugins": ["node-workspace"],
   "separate-pull-requests": true,
   "packages": {
     "packages/pkg1": {
-      "release-type": "node",
       "component": "test"
     }
   }
