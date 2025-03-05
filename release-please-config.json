@@ -4,7 +4,9 @@
   "include-component-in-tag": true,
   "tag-separator": "@",
   "separate-pull-requests": true,
-  "version-file": "package.json",
+  "plugins": [{
+    "type": "node-workspace"
+  }],
   "packages": {
     "packages/pkg1": {
       "component": "test"
