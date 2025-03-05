@@ -3,3 +3,4 @@
 <!-- feat: test version-file -->
 
 fix: fix something
+feat: update pkgs
