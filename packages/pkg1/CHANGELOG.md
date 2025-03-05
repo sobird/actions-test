@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/sobird/actions-test/compare/pkg1@v1.1.0...pkg1@v1.2.0) (2025-03-05)
+
+
+### Features
+
+* update pr content ([b856072](https://github.com/sobird/actions-test/commit/b856072406f947b2b3689ce8e013a76d3edce3dd))
+
 ## [1.1.0](https://github.com/sobird/actions-test/compare/pkg1@v1.0.0...pkg1@v1.1.0) (2025-03-05)
 
 
