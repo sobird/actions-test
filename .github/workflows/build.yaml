@@ -1,6 +1,7 @@
 name: Gitea Actions Test
 run-name: ${{ github.actor }} is testing out Gitea Actions  
-on: [push]
+on:
+  workflow_dispatch:
 jobs:
   Explore-Gitea-Actions:
     needs: Test-Node
