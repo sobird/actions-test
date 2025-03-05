@@ -1,3 +1,3 @@
 # actions-test
 
-test outputs
+test path
