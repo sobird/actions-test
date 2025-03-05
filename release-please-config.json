@@ -7,6 +7,9 @@
   "packages": {
     "packages/pkg1": {
       "component": "test"
+    },
+    "packages/pkg2": {
+      "component": "pkg2"
     }
   }
 }
