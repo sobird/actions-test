@@ -6,7 +6,9 @@
   "plugins": ["node-workspace"],
   "packages": {
     ".": {
-      "release-type": "node"
+      "release-type": "node",
+      "component-no-space": true,
+      "component": "aaaa"
     },
     "packages/pkg1": {
       "release-type": "node",
