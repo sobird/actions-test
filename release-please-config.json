@@ -6,11 +6,6 @@
   "plugins": ["node-workspace"],
   "separate-pull-requests": true,
   "packages": {
-    ".": {
-      "release-type": "node",
-      "component-no-space": true,
-      "component": "aaaa"
-    },
     "packages/pkg1": {
       "release-type": "node",
       "component": "test"
