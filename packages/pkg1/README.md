@@ -12,3 +12,4 @@ feat: test package.json version
 feat: update pr content
 
 fix: fix something
+feat: feat something
