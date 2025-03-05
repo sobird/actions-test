@@ -40,6 +40,8 @@ jobs:
           # If true, do not attempt to create releases. 
           # This is useful if splitting release tagging from PR creation.
           # skip-github-release: true
+      - name: Print Pr
+        run: echo ${{ steps.release.outputs.pr }}
 
   publish:
     if: needs.release-please.outputs.release_created
