@@ -8,6 +8,7 @@
     "type": "node-workspace"
   }],
   "packages": {
+    ".": {},
     "packages/pkg1": {
       "component": "pkg1"
     },
