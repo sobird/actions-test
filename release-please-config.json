@@ -9,7 +9,7 @@
   }],
   "packages": {
     "packages/pkg1": {
-      "component": "test"
+      "component": "pkg1"
     },
     "packages/pkg2": {
       "component": "pkg2"
