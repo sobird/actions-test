@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/sobird/actions-test/compare/pkg2@v1.2.1...pkg2@v1.3.0) (2025-03-05)
+
+
+### Features
+
+* update pkgs ([e7ad2e0](https://github.com/sobird/actions-test/commit/e7ad2e035976c105be1130ae6ffe9e9d1cf951eb))
+
 ## [1.2.1](https://github.com/sobird/actions-test/compare/pkg2@v1.2.0...pkg2@v1.2.1) (2025-03-05)
 
 
