@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.3.0](https://github.com/sobird/actions-test/compare/pkg1@v1.2.0...pkg1@v1.3.0) (2025-03-05)
+
+
+### Features
+
+* feat something ([d6f2fd6](https://github.com/sobird/actions-test/commit/d6f2fd691e9e3666c6062e62229403216d94e008))
+* update pkgs ([e7ad2e0](https://github.com/sobird/actions-test/commit/e7ad2e035976c105be1130ae6ffe9e9d1cf951eb))
+
+
+### Bug Fixes
+
+* fix something ([7e9f72f](https://github.com/sobird/actions-test/commit/7e9f72f5366983c1380171b88df1caa16adf151d))
+
 ## [1.2.0](https://github.com/sobird/actions-test/compare/pkg1@v1.1.0...pkg1@v1.2.0) (2025-03-05)
 
 
