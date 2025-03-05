@@ -42,6 +42,9 @@ jobs:
           # skip-github-release: true
       - name: Print Pr
         run: echo ${{ steps.release.outputs.pr }}
+      
+      - name: Print Pkg Pr
+        run: echo ${{ steps.release.outputs['packages/pkg1--pr'] }}
 
   publish:
     if: needs.release-please.outputs.release_created
